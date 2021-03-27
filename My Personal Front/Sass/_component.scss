@@ -1,0 +1,98 @@
+@import "basic";
+#home {
+	.logo {
+		width: 30%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgb(16, 15, 15);
+		img {
+			width: 100%;
+		}
+	}
+	.navbar {
+		.nav-link {
+			font-size: 15px;
+			margin-right: 20px;
+			font-family: $font-barlow;
+			&:hover {
+				color: $color-hover !important;
+			}
+		}
+		&-brand {
+			width: 100px;
+			margin-left: 50px;
+		}
+	}
+	.baner {
+		position: relative;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transform: translate(-30%, 110%);
+		font-family: $font-barlow;
+		// font-family: $font-dance;
+		// font-weight: 700;
+		// font-family: $font-bebas;
+		// font-family: $font-sans;
+
+		span {
+			font-size: 1.5rem;
+		}
+	}
+
+	.langlink {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: end;
+		top: 150px;
+		.lang {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			align-items: center;
+			// justify-content: ;
+			left: 0;
+			// transform: translateY(300%);
+			font-family: $font-barlow;
+			top: 10px;
+
+			// &-link {
+			// }
+			a {
+				transform: rotate(90deg);
+				font-family: $font-barlow;
+				color: #fff;
+				font-size: 1rem;
+				text-decoration: none;
+				margin-bottom: 10px;
+			}
+			a:hover {
+				color: $color-hover;
+			}
+		}
+		.links {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			bottom: 20px;
+			right: 0;
+			// transform: translateY(50%);
+
+			&-item {
+				color: white;
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+			&-item:hover {
+				color: $color-hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../Css/main.css" />
+		<link rel="stylesheet" href="../lib/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="../lib/fontawesome/all.css" />
+		<link rel="stylesheet" href="../lib/AOS/aos.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="home">
+			<!-- -------Background------- -->
+			<div id="background"></div>
+			<div id="bglay">
+				<!-- ------Navigation bar------ -->
+				<nav
+					class="container-fluid navbar navbar-expand-lg navbar-dark"
+				>
+					<!-- <a class="navbar-brand" href="#"
+						><img src="../Images/Logo.svg" alt=""
+					/></a> -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- ------Baner------ -->
+				<div class="container-fluid baner">
+					<h2>ALIREZA QANATI</h2>
+					<h1 class="cd-headline clip home-headline"></h1>
+						I'M A
+						<span
+							class="cd-words-wrapper single-headline"
+							id="work"
+						>
+							<b class="is_visible"> DEVELOPER </b>
+							<b> FreeLancer </b>
+						</span>
+					</h1>
+				</div>
+				<!-- -----Languages&links----- -->
+				<div class="langlink container-fluid">
+					<div class="lang">
+						<a href="#">ENG</a>
+						<a href="#">FA</a>
+						<a href="#">FR</a>
+					</div>
+					<!-- -------links------- -->
+					<div class="links">
+						<a href="#" class="links-item"
+							><i class="fab fa-twitter"></i
+						></a>
+						<a href="#" class="links-item"
+							><i class="fab fa-instagram"></i
+						></a>
+						<a href="#" class="links-item"
+							><i class="fab fa-github"></i
+						></a>
+						<a href="#" class="links-item"
+							><i class="fab fa-linkedin-in"></i
+						></a>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="/Images/Logo.svg" alt="" />
+			</div>
+		</div>
+
+		<!-- --------scripts below---------- -->
+		<script src="../lib/bootstrap/jquery-3.4.1.min.js"></script>
+		<script src="../Js/index.js"></script>
+		<script src="../lib/AOS/aos.js"></script>
+		<script src="../lib/bootstrap/bootstrap.js"></script>
+		<script src="../Js/in.js"></script>
+		<script src="../lib/fontawesome/all.js"></script>
+		<script src="../lib/lightGallery/"></script>
+		<script>
+			${
+				function() {
+  var a, t, i = 2500, s = 660, o = 1500;
+  function n(e) {
+      var a = function(e) {
+          return e.is(":last-child") ? e.parent().children().eq(0) : e.next()
+      }(e);
+      e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({
+          width: "2px"
+      }, s, (function() {
+          var t;
+          t = a,
+          e.removeClass("is-visible").addClass("is-hidden"),
+          t.removeClass("is-hidden").addClass("is-visible"),
+          function(e, a) {
+              e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({
+                  width: e.width() + 10
+              }, s, (function() {
+                  setTimeout((function() {
+                      n(e)
+                  }
+                  ), o)
+              }
+              ))
+          }(a)
+      }
+      ))
+  }
+  a = e(".cd-headline"),
+  t = i,
+  a.each((function() {
+      var a = e(this);
+      if (a.hasClass("clip")) {
+          var i = a.find(".cd-words-wrapper")
+            , s = i.width() + 10;
+          i.css("width", s)
+      }
+      setTimeout((function() {
+          n(a.find(".is-visible").eq(0))
+      }
+      ), t)
+  }
+  ))
+}()
+			}
+		</script>
+	</body>
+</html>
